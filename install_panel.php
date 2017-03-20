@@ -21,9 +21,9 @@ if (strtolower(substr(PHP_OS, 0, 5)) === 'linux')
 #print_r($release_info);
 }
 $arch = shell_exec( "uname -m" );
-echo "Welcome \n";
-echo "FOS-Streaming will be installed on your system \n";
-echo "Please don't close this session until it's finished \n \n";
+echo "Bienvenido \n";
+echo "FOS-Streaming sera instalado en tu sistema \n";
+echo "Por favor no cierres la sesion hasta que termine \n \n";
 echo "1. [Distribution Detection:] ";
 echo " [############";
 if (trim($release_info["DISTRIB_ID"]) == "Ubuntu") {
@@ -232,12 +232,12 @@ if(trim($arch) == "x86_64") {
 #shell_exec("/bin/rm -r /home/fos-streaming/ffmpeg-release-64bit-static.tar.xz   > /dev/null 2>&1");
     echo "]PASS \n";
     echo "******************************************************************************************** \n";
-    echo "FOS-Streaming installed.. \n";
-    echo "visit management page: 'http://host:8000' \n";
+    echo "FOS-Streaming instalado.. \n";
+    echo "Para visitar debes ingresar a: 'http://host:8000' \n";
     echo "Login: \n";
     echo "Username: admin \n";
     echo "Password: admin \n";
-    echo "database details: \n";
+    echo "Detalles de tu base: \n";
     echo "IMPORTANT: After you logged in, go to settings and check your ip-address. \n";
     echo "******************************************************************************************** \n";
 
